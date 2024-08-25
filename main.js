@@ -22,7 +22,7 @@ form.addEventListener("submit", (event) => {
   } else if (columnsInput > 20 || columnsInput < 8) {
     formError.innerHTML = "Columns shoud be 8-12!";
     hasError = true;
-  } else if (bombsInput > rowsInput * columnsInput) {
+  } else if (bombsInput > rowsInput * columnsInput - 1) {
     formError.innerHTML = `Bombs should be less than ${
       rowsInput * columnsInput
     }!`;
