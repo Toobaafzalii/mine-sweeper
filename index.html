@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/bomb-svg.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Minesweeper!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>MINESWEEPER!</h1>
+        <form action="submit" id="form" class="form">
+          <label for="rows-input">Rows Count:</label
+          ><input value="10" type="number" id="rows-input" required />
+          <label for="columns-input">columns Count:</label
+          ><input value="10" type="number" id="columns-input" required />
+          <label for="bombs-input">Bombs Count:</label
+          ><input value="20" type="number" id="bombs-input" required />
+          <button form="form" class="form-btn" id="start-btn">Start</button>
+        </form>
+        <div>
+          <div class="form-error"></div>
+          <button class="form-btn" id="restart-btn" hidden>Restart</button>
+        </div>
+      </div>
+      <div class="board-container">
+        <div class="game-board"></div>
+        <div class="messege-box" id="messege-box"></div>
+      </div>
+    </div>
+    <script defer type="module" src="./main.js"></script>
+  </body>
+</html>
